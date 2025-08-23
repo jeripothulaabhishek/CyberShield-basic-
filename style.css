@@ -1,0 +1,121 @@
+/* Cyberpunk Neon Theme */
+body {
+  font-family: 'Courier New', monospace;
+  background: #0a0a0a;
+  color: #00ffcc;
+  text-align: center;
+  padding: 30px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.title {
+  font-size: 3rem;
+  text-shadow: 0 0 20px #00ffcc;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+.scanner-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 12px;
+  width: 70%;
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+  background: #111;
+  color: #00ffcc;
+  outline: none;
+  transition: 0.3s;
+}
+input:focus {
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #00ffaa;
+  box-shadow: 0 0 15px #00ffaa;
+}
+
+.result-box {
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  background: #111;
+  border: 2px solid #00ffcc;
+  box-shadow: 0 0 15px #00ffcc;
+  width: 75%;
+  transition: 0.3s;
+}
+
+.loader {
+  margin: 15px auto;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #00ffcc;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+.history-title {
+  margin-top: 25px;
+  text-shadow: 0 0 10px #ff0080;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  background: #111;
+  color: #00ffcc;
+}
+
+.safe {
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+.suspicious {
+  color: #ffaa00;
+  font-weight: bold;
+}
+
+.danger {
+  color: #ff0044;
+  font-weight: bold;
+}

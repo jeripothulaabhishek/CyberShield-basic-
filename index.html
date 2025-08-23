@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CyberShield - Advanced Phishing Detector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🛡 CyberShield</h1>
+    <p class="subtitle">Advanced Phishing & Malware URL Scanner</p>
+
+    <div class="scanner-box">
+      <input type="text" id="urlInput" placeholder="Enter URL to scan..." />
+      <button id="scanBtn">Scan URL</button>
+    </div>
+
+    <div id="loader" class="loader"></div>
+    <div id="result" class="result-box">🔍 Awaiting Scan...</div>
+
+    <h2 class="history-title">📜 Scan History</h2>
+    <table id="historyTable">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>URL</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="historyBody"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
