@@ -7,28 +7,67 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="title">🛡 CyberShield</h1>
-    <p class="subtitle">Advanced Phishing & Malware URL Scanner</p>
 
-    <div class="scanner-box">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">🛡 CyberShield</h1>
+      <p class="subtitle">Advanced Phishing & Malware URL Scanner</p>
+    </header>
+
+    <!-- Scanner Box -->
+    <section class="scanner-box">
       <input type="text" id="urlInput" placeholder="Enter URL to scan..." />
-      <button id="scanBtn">Scan URL</button>
-    </div>
+      <button id="scanBtn">Scan</button>
+    </section>
 
+    <!-- Loader + Result -->
     <div id="loader" class="loader"></div>
     <div id="result" class="result-box">🔍 Awaiting Scan...</div>
 
-    <h2 class="history-title">📜 Scan History</h2>
-    <table id="historyTable">
-      <thead>
-        <tr>
-          <th>Time</th>
-          <th>URL</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody id="historyBody"></tbody>
-    </table>
+    <!-- Website Info -->
+    <section id="websiteInfo" class="info-box" style="display:none;">
+      <h2 class="section-title">🌐 Website Details</h2>
+      <div class="website-details">
+        <img id="siteFavicon" src="" alt="Favicon" class="favicon">
+        <p><strong>Title:</strong> <span id="siteTitle"></span></p>
+        <p><strong>Description:</strong> <span id="siteDesc"></span></p>
+      </div>
+    </section>
+
+    <!-- Scan History -->
+    <section>
+      <h2 class="section-title">📜 Scan History</h2>
+      <button id="clearHistoryBtn" class="clear-btn">🗑 Clear History</button>
+      <table id="historyTable">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>URL</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="historyBody"></tbody>
+      </table>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-box">
+      <h2 class="section-title">ℹ️ About CyberShield</h2>
+      <p>
+        CyberShield is your <strong>real-time defense system</strong> against 
+        <span class="highlight">phishing websites</span>, 
+        <span class="highlight">malware URLs</span>, and 
+        <span class="highlight">suspicious domains</span>.  
+        Using AI-driven heuristics and global threat databases, CyberShield scans URLs 
+        instantly and helps you browse safely.  
+      </p>
+      <p>
+        ✅ Instant Detection <br>
+        ✅ Suspicious Pattern Analysis <br>
+        ✅ Secure History Tracking <br>
+      </p>
+    </section>
+
   </div>
 
   <script src="script.js"></script>
